@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>संस्कृत शब्दाभ्यास | Sanskrit Shabda Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="confetti-layer" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero__symbols" aria-hidden="true">
+      <span class="symbol symbol--om">ॐ</span>
+      <span class="symbol symbol--divider"></span>
+      <span class="symbol symbol--lotus" role="img">✿</span>
+    </div>
+    <h1>संस्कृत शब्दाभ्यास <span class="subtitle">| Sanskrit Shabda Practice</span></h1>
+    <p>सुबन्त-रूपाणां अभ्यासार्थं सौम्यं क्रीडाक्षेत्रम् <span class="subtitle">• A gentle playground for noun forms</span></p>
+  </header>
+
+  <main>
+    <section class="scoreboard" aria-live="polite">
+      <div class="scoreboard__metric">
+        <span class="scoreboard__label">सम्यक् उत्तराणि <span class="subtitle">Correct answers</span></span>
+        <span class="scoreboard__value" id="correct-count">०</span>
+      </div>
+      <div class="scoreboard__metric">
+        <span class="scoreboard__label">प्रश्न-सङ्ख्या <span class="subtitle">Questions attempted</span></span>
+        <span class="scoreboard__value" id="total-count">०</span>
+      </div>
+      <div class="scoreboard__progress">
+        <label for="progress-bar">प्रगति <span class="subtitle">Progress</span></label>
+        <div class="progress">
+          <div class="progress__bar" id="progress-bar" style="width: 0%;"></div>
+        </div>
+        <span class="progress__percent" id="progress-percent">०%</span>
+      </div>
+    </section>
+
+    <section class="mode-toggle" role="tablist" aria-label="क्रीडाप्रकारः">
+      <button id="mode-properties" class="mode-toggle__button active" role="tab" aria-selected="true">
+        गुणात् रूपम्
+        <small>(शब्द-लिङ्ग-आदि ज्ञात्वा रूपम् वदतु • Guess the form from the properties)</small>
+      </button>
+      <button id="mode-forms" class="mode-toggle__button" role="tab" aria-selected="false">
+        रूपात् गुणाः
+        <small>(रूपं दृष्ट्वा गुणान् चिनुत • Identify the properties from the form)</small>
+      </button>
+    </section>
+
+    <section class="game-surface" id="game-surface">
+      <div class="card card--loading" id="loading-card">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>आकर्षणं क्रियते… <span class="subtitle">Loading data…</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>नमः पारम्पर्याय &bull; अध्ययनं क्रीडारूपेण <span class="subtitle">• Honouring tradition, learning playfully</span></p>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
